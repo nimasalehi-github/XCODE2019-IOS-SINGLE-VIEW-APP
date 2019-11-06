@@ -15,6 +15,9 @@
 		F962A36E236F542C00574752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F962A36C236F542C00574752 /* LaunchScreen.storyboard */; };
 		F962A379236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F962A378236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPTests.swift */; };
 		F962A384236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F962A383236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift */; };
+		F9FA5229237319DB001859DA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA5228237319DB001859DA /* Room.swift */; };
+		F9FA522A237319DB001859DA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA5228237319DB001859DA /* Room.swift */; };
+		F9FA522B237319DB001859DA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA5228237319DB001859DA /* Room.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		F962A37F236F542D00574752 /* XCODE2019-IOS-SINGLE-VIEW-APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XCODE2019-IOS-SINGLE-VIEW-APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F962A383236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift; sourceTree = "<group>"; };
 		F962A385236F542D00574752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FA5228237319DB001859DA /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				F962A36C236F542C00574752 /* LaunchScreen.storyboard */,
 				F962A36F236F542C00574752 /* Info.plist */,
 				F962A369236F542C00574752 /* Preview Content */,
+				F9FA5228237319DB001859DA /* Room.swift */,
 			);
 			path = "XCODE2019-IOS-SINGLE-VIEW-APP";
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 			files = (
 				F962A362236F542A00574752 /* AppDelegate.swift in Sources */,
 				F962A364236F542A00574752 /* SceneDelegate.swift in Sources */,
+				F9FA5229237319DB001859DA /* Room.swift in Sources */,
 				F962A366236F542A00574752 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FA522A237319DB001859DA /* Room.swift in Sources */,
 				F962A379236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FA522B237319DB001859DA /* Room.swift in Sources */,
 				F962A384236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
