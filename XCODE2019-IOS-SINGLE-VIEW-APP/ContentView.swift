@@ -14,6 +14,7 @@ struct ContentView: View {
             VStack {
                 Text("Rooms")
                 Text("People Placeholder")
+                    .font(.subheadline)
             }
         }
     }
