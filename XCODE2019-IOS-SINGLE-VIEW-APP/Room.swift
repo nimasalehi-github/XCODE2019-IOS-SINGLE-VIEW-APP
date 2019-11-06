@@ -17,20 +17,18 @@ struct Room: Identifiable {
     var hasVideo: Bool = false
     
     var imageName: String { return name }
-    var thumbnailName: String { return name + "Thumb"}
+    var thumbnailName: String { return name+"Thumb"}
 }
 
-#if DEBUG
 let testData = [
-    Room(name: " J SDeck", capacity: 13 , hasVideo: true),
-    Room(name: " W SDeck", capacity: 13 , hasVideo: false),
-    Room(name: " C TDeck", capacity: 14 , hasVideo: true),
-    Room(name: " P MDeck", capacity: 16 , hasVideo: false),
-    Room(name: " A MDeck", capacity: 18 , hasVideo: true),
-    Room(name: " N Deck", capacity: 19 , hasVideo: true),
-    Room(name: " M&M Deck", capacity: 15 , hasVideo: true),
-    Room(name: " R Deck", capacity: 10 , hasVideo: false),
-    Room(name: " R Deck", capacity: 13 , hasVideo: false),
-    Room(name: " C Deck", capacity: 13 , hasVideo: false)
+    Room(name: "JSDeck", capacity: 13 , hasVideo: true),
+    Room(name: "WSDeck", capacity: 13 , hasVideo: false),
+    Room(name: "CTDeck", capacity: 14 , hasVideo: true),
+    Room(name: "PMDeck", capacity: 16 , hasVideo: false),
+    Room(name: "AMDeck", capacity: 18 , hasVideo: true),
+    Room(name: "NDeck", capacity: 19 , hasVideo: true),
+    Room(name: "MMDeck", capacity: 15 , hasVideo: true),
+    Room(name: "RDeck", capacity: 10 , hasVideo: false),
+    Room(name: "RsDeck", capacity: 13 , hasVideo: false),
+    Room(name: "CDeck", capacity: 13 , hasVideo: false)
 ]
-#endif

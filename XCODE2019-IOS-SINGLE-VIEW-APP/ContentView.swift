@@ -9,22 +9,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    var rooms: [Room] = []
+    
     var body: some View {
-        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            Image(systemName: "photo")
+        List(rooms) { room in
+            Image(room.thumbnailName)
+                
             VStack {
-                Text("Rooms")
-                Text("People Placeholder")
+                Text(room.name)
+                Text("\(room.capacity) people")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(rooms: testData)
         
     }
 }
