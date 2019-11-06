@@ -10,11 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
+        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+            Image(systemName: "photo")
             VStack {
                 Text("Rooms")
                 Text("People Placeholder")
                     .font(.subheadline)
+                    .foregroundColor(.secondary)
             }
         }
     }
