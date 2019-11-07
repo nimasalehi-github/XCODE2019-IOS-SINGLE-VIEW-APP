@@ -14,6 +14,7 @@ struct ContentView: View {
     var body: some View {
         List(rooms) { room in
             Image(room.thumbnailName)
+                .cornerRadius(15.0)
                 
             VStack {
                 Text(room.name)
@@ -24,6 +25,7 @@ struct ContentView: View {
         }
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(rooms: testData)
