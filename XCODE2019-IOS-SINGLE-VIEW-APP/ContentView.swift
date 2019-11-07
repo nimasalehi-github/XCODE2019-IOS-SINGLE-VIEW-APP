@@ -12,16 +12,22 @@ struct ContentView: View {
     var rooms: [Room] = []
     
     var body: some View {
-        List(rooms) { room in
-            Image(room.thumbnailName)
-                .cornerRadius(15.0)
-                
-            VStack {
-                Text(room.name)
-                Text("\(room.capacity) people")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+        NavigationView {
+            List(rooms) { room in
+                NavigationLink(destination: Text(room.name)) {
+                    
+                Image(room.thumbnailName)
+                    .cornerRadius(15.0)
+                    
+                VStack {
+                    Text(room.name)
+                    Text("\(room.capacity) people")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                    }
+                }
             }
+            .navigationBarTitle(/*@START_MENU_TOKEN@*/"Navigation Bar"/*@END_MENU_TOKEN@*/)
         }
     }
 }
