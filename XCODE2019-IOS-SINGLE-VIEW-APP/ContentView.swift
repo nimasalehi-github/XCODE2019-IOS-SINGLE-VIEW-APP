@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(rooms) { room in
-                ExtractedViewROOMCELL(room: <#Room#>)
+                ExtractedViewROOMCELL(room: room)
             }
             .navigationBarTitle(/*@START_MENU_TOKEN@*/"Navigation Bar"/*@END_MENU_TOKEN@*/)
         }
@@ -29,7 +29,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 //ExtractedViewROOMCELL
 struct ExtractedViewROOMCELL: View {
-    let room:Room
+    let room: Room
 
     var body: some View {
         NavigationLink(destination: Text(room.name)) {
