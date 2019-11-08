@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F935529B237585120072A877 /* SwiftUIView-ROOMDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935529A237585120072A877 /* SwiftUIView-ROOMDetail.swift */; };
+		F935529C237585120072A877 /* SwiftUIView-ROOMDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935529A237585120072A877 /* SwiftUIView-ROOMDetail.swift */; };
+		F935529D237585120072A877 /* SwiftUIView-ROOMDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935529A237585120072A877 /* SwiftUIView-ROOMDetail.swift */; };
 		F962A362236F542A00574752 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F962A361236F542A00574752 /* AppDelegate.swift */; };
 		F962A364236F542A00574752 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F962A363236F542A00574752 /* SceneDelegate.swift */; };
 		F962A366236F542A00574752 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F962A365236F542A00574752 /* ContentView.swift */; };
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F935529A237585120072A877 /* SwiftUIView-ROOMDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-ROOMDetail.swift"; sourceTree = "<group>"; };
 		F962A35E236F542A00574752 /* XCODE2019-IOS-SINGLE-VIEW-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XCODE2019-IOS-SINGLE-VIEW-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F962A361236F542A00574752 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F962A363236F542A00574752 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				F962A361236F542A00574752 /* AppDelegate.swift */,
 				F962A363236F542A00574752 /* SceneDelegate.swift */,
 				F962A365236F542A00574752 /* ContentView.swift */,
+				F935529A237585120072A877 /* SwiftUIView-ROOMDetail.swift */,
 				F962A367236F542C00574752 /* Assets.xcassets */,
 				F962A36C236F542C00574752 /* LaunchScreen.storyboard */,
 				F962A36F236F542C00574752 /* Info.plist */,
@@ -273,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F962A362236F542A00574752 /* AppDelegate.swift in Sources */,
+				F935529B237585120072A877 /* SwiftUIView-ROOMDetail.swift in Sources */,
 				F962A364236F542A00574752 /* SceneDelegate.swift in Sources */,
 				F9FA5229237319DB001859DA /* Room.swift in Sources */,
 				F962A366236F542A00574752 /* ContentView.swift in Sources */,
@@ -284,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9FA522A237319DB001859DA /* Room.swift in Sources */,
+				F935529C237585120072A877 /* SwiftUIView-ROOMDetail.swift in Sources */,
 				F962A379236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9FA522B237319DB001859DA /* Room.swift in Sources */,
+				F935529D237585120072A877 /* SwiftUIView-ROOMDetail.swift in Sources */,
 				F962A384236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

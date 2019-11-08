@@ -16,7 +16,7 @@ struct ContentView: View {
             List(rooms) { room in
                 ExtractedViewROOMCELL(room: room)
             }
-            .navigationBarTitle(/*@START_MENU_TOKEN@*/"Navigation Bar"/*@END_MENU_TOKEN@*/)
+            .navigationBarTitle(Text("Rooms"))
         }
     }
 }
@@ -32,7 +32,7 @@ struct ExtractedViewROOMCELL: View {
     let room: Room
 
     var body: some View {
-        NavigationLink(destination: Text(room.name)) {
+        return NavigationLink(destination: SwiftUIView_ROOMDetail(room: room)) {
             
             Image(room.thumbnailName)
                 .cornerRadius(15.0)
