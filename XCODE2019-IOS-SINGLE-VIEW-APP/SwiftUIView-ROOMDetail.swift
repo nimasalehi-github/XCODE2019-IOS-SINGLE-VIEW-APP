@@ -15,7 +15,7 @@ struct SwiftUIView_ROOMDetail: View {
         Image(room.imageName)
             .resizable()
             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-            .navigationBarTitle(Text(room.name))
+            .navigationBarTitle(Text(room.name), displayMode: .inline)
     }
 }
 
