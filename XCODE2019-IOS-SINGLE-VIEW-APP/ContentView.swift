@@ -27,7 +27,6 @@ struct ContentView_Previews: PreviewProvider {
         
     }
 }
-//ExtractedViewROOMCELL
 struct ExtractedViewROOMCELL: View {
     let room: Room
 
