@@ -17,8 +17,9 @@ struct SwiftUIView_ROOMDetail: View {
             .aspectRatio(contentMode: zoomed ?  .fill : .fit)
             .navigationBarTitle(Text(room.name), displayMode: .inline)
             .onTapGesture {
-                self.zoomed.toggle()
-        }
+                withAnimation { self.zoomed.toggle()
+                }
+            }
     }
 }
 
