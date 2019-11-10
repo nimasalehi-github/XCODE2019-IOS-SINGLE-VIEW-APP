@@ -16,10 +16,11 @@ class ROOMStore: ObservableObject {
     }
     
     
-    init(rooms: [Room]) {
+    init(rooms: [Room] = []) {
         self.rooms = rooms
     }
     
     var didChange = PassthroughSubject<Void, Never>()
     
 }
+  

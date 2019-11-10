@@ -8,12 +8,13 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
-    var rooms: [Room] = []
+    @ObservedObject var store = ROOMStore()
     
     var body: some View {
         NavigationView {
-            List(rooms) { room in
+            List(store.rooms) { room in
                 ExtractedViewROOMCELL(room: room)
             }
             .navigationBarTitle(Text("Rooms"))
@@ -23,8 +24,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(rooms: testData)
-        
+        ContentView(store: ROOMStore(rooms: testData))
     }
 }
 struct ExtractedViewROOMCELL: View {
