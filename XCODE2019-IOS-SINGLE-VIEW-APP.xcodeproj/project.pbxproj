@@ -18,6 +18,12 @@
 		F962A36E236F542C00574752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F962A36C236F542C00574752 /* LaunchScreen.storyboard */; };
 		F962A379236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F962A378236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPTests.swift */; };
 		F962A384236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F962A383236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift */; };
+		F9E0B7C42378AE21002CF85A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9E0B7C22378AE21002CF85A /* Model.xcdatamodeld */; };
+		F9E0B7C52378AE21002CF85A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9E0B7C22378AE21002CF85A /* Model.xcdatamodeld */; };
+		F9E0B7C62378AE21002CF85A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9E0B7C22378AE21002CF85A /* Model.xcdatamodeld */; };
+		F9E0B7C82378AEA5002CF85A /* File-ROOMStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E0B7C72378AEA5002CF85A /* File-ROOMStore.swift */; };
+		F9E0B7C92378AEA5002CF85A /* File-ROOMStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E0B7C72378AEA5002CF85A /* File-ROOMStore.swift */; };
+		F9E0B7CA2378AEA5002CF85A /* File-ROOMStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E0B7C72378AEA5002CF85A /* File-ROOMStore.swift */; };
 		F9FA5229237319DB001859DA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA5228237319DB001859DA /* Room.swift */; };
 		F9FA522A237319DB001859DA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA5228237319DB001859DA /* Room.swift */; };
 		F9FA522B237319DB001859DA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA5228237319DB001859DA /* Room.swift */; };
@@ -56,6 +62,8 @@
 		F962A37F236F542D00574752 /* XCODE2019-IOS-SINGLE-VIEW-APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XCODE2019-IOS-SINGLE-VIEW-APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F962A383236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift; sourceTree = "<group>"; };
 		F962A385236F542D00574752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E0B7C32378AE21002CF85A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F9E0B7C72378AEA5002CF85A /* File-ROOMStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File-ROOMStore.swift"; sourceTree = "<group>"; };
 		F9FA5228237319DB001859DA /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,11 +119,13 @@
 				F962A363236F542A00574752 /* SceneDelegate.swift */,
 				F962A365236F542A00574752 /* ContentView.swift */,
 				F935529A237585120072A877 /* SwiftUIView-ROOMDetail.swift */,
+				F9E0B7C22378AE21002CF85A /* Model.xcdatamodeld */,
+				F9E0B7C72378AEA5002CF85A /* File-ROOMStore.swift */,
+				F9FA5228237319DB001859DA /* Room.swift */,
 				F962A367236F542C00574752 /* Assets.xcassets */,
 				F962A36C236F542C00574752 /* LaunchScreen.storyboard */,
 				F962A36F236F542C00574752 /* Info.plist */,
 				F962A369236F542C00574752 /* Preview Content */,
-				F9FA5228237319DB001859DA /* Room.swift */,
 			);
 			path = "XCODE2019-IOS-SINGLE-VIEW-APP";
 			sourceTree = "<group>";
@@ -282,6 +292,8 @@
 				F962A364236F542A00574752 /* SceneDelegate.swift in Sources */,
 				F9FA5229237319DB001859DA /* Room.swift in Sources */,
 				F962A366236F542A00574752 /* ContentView.swift in Sources */,
+				F9E0B7C82378AEA5002CF85A /* File-ROOMStore.swift in Sources */,
+				F9E0B7C42378AE21002CF85A /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9FA522A237319DB001859DA /* Room.swift in Sources */,
+				F9E0B7C92378AEA5002CF85A /* File-ROOMStore.swift in Sources */,
 				F935529C237585120072A877 /* SwiftUIView-ROOMDetail.swift in Sources */,
 				F962A379236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPTests.swift in Sources */,
+				F9E0B7C52378AE21002CF85A /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,8 +314,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9FA522B237319DB001859DA /* Room.swift in Sources */,
+				F9E0B7CA2378AEA5002CF85A /* File-ROOMStore.swift in Sources */,
 				F935529D237585120072A877 /* SwiftUIView-ROOMDetail.swift in Sources */,
 				F962A384236F542D00574752 /* XCODE2019_IOS_SINGLE_VIEW_APPUITests.swift in Sources */,
+				F9E0B7C62378AE21002CF85A /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +626,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9E0B7C22378AE21002CF85A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9E0B7C32378AE21002CF85A /* Model.xcdatamodel */,
+			);
+			currentVersion = F9E0B7C32378AE21002CF85A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F962A356236F542900574752 /* Project object */;
 }
