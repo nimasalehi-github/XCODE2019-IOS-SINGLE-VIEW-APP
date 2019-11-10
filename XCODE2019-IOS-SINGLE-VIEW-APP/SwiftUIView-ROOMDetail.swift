@@ -17,20 +17,34 @@ struct SwiftUIView_ROOMDetail: View {
                 .resizable()
                 .aspectRatio(contentMode: zoomed ?  .fill : .fit)
                 .navigationBarTitle(Text(room.name), displayMode: .inline)
-                .onTapGesture {withAnimation { self.zoomed.toggle() } }
+                .onTapGesture {
+                    withAnimation(.easeIn(duration: 2)) { self.zoomed.toggle() }
+                        
+                }
                 .frame(minWidth: 0, maxWidth: .infinity,
                        minHeight: 0, maxHeight: .infinity)
-            Image(systemName: "video.fill")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            if room.hasVideo && !zoomed{
+                Image(systemName: "video.fill")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    .transition(.move(edge: .leading))
+            }
         }
     }
 }
 
 struct SwiftUIView_ROOMDetail_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
-            SwiftUIView_ROOMDetail(room: testData[0])
+        Group {
+            NavigationView{
+                SwiftUIView_ROOMDetail(room: testData[0])
+            }
+            
+            NavigationView{
+                SwiftUIView_ROOMDetail(room: testData[1])
+
+            }
         }
     }
 }
