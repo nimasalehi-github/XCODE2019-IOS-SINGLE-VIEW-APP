@@ -35,7 +35,7 @@ struct ContentView: View {
     func ADDRoom()  {
         store.rooms.append(Room(name: "HallDeck", capacity: 2000, hasVideo: true))
     }
-    
+//    
     func deleteRoom(at offsets: IndexSet){
         store.rooms.remove(atOffsets: offsets)
     }
