@@ -15,12 +15,18 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                Button(action: ADDRoom){
+                    Text("Add Deck")
+                }
                 ForEach(store.rooms){room in
                     ExtractedViewROOMCELL(room: room)
                 }
             }
-            .navigationBarTitle(Text("Rooms"))
+            .navigationBarTitle(Text("Decks"))
         }
+    }
+    func ADDRoom()  {
+        store.rooms.append(Room(name: "HallDeck", capacity: 2000, hasVideo: true))
     }
 }
 
