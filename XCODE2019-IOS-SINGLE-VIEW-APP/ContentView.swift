@@ -15,14 +15,20 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                Button(action: ADDRoom){
-                    Text("Add Deck")
+                Section{
+                    Button(action: ADDRoom){
+                        Text("Add Deck")
+                    }
                 }
-                ForEach(store.rooms){room in
-                    ExtractedViewROOMCELL(room: room)
+                
+                Section{
+                    ForEach(store.rooms){room in
+                        ExtractedViewROOMCELL(room: room)
+                    }
                 }
             }
             .navigationBarTitle(Text("Decks"))
+            .listStyle(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=List Style@*/DefaultListStyle()/*@END_MENU_TOKEN@*/)
         }
     }
     func ADDRoom()  {
