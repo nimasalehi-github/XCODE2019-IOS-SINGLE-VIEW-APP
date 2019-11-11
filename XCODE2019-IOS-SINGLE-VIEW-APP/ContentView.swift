@@ -17,7 +17,7 @@ struct ContentView: View {
             List {
                 Section{
                     Button(action: ADDRoom){
-                        Text("Add Deck")
+                        Text("AddDeck")
                     }
                 }
                 
@@ -25,6 +25,7 @@ struct ContentView: View {
                     ForEach(store.rooms){room in
                         ExtractedViewROOMCELL(room: room)
                     }
+                    .onDelete(perform: deleteRoom(at:) )
                 }
             }
             .navigationBarTitle(Text("Decks"))
@@ -33,6 +34,10 @@ struct ContentView: View {
     }
     func ADDRoom()  {
         store.rooms.append(Room(name: "HallDeck", capacity: 2000, hasVideo: true))
+    }
+    
+    func deleteRoom(at offsets: IndexSet){
+        store.rooms.remove(atOffsets: offsets)
     }
 }
 struct ContentView_Previews: PreviewProvider {
