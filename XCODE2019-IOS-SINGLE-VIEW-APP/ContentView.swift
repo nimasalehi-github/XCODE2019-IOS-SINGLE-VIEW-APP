@@ -26,18 +26,24 @@ struct ContentView: View {
                         ExtractedViewROOMCELL(room: room)
                     }
                     .onDelete(perform: deleteRoom(at:) )
+                    .onMove(perform:moveROOM(from:to:))
                 }
             }
-            .navigationBarTitle(Text("Decks"))
-            .listStyle(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=List Style@*/DefaultListStyle()/*@END_MENU_TOKEN@*/)
+        .navigationBarTitle(Text("Decks"))
+        .navigationBarItems(trailing: EditButton())
+        .listStyle(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=List Style@*/DefaultListStyle()/*@END_MENU_TOKEN@*/)
         }
     }
     func ADDRoom()  {
         store.rooms.append(Room(name: "HallDeck", capacity: 2000, hasVideo: true))
     }
-//    
+
     func deleteRoom(at offsets: IndexSet){
         store.rooms.remove(atOffsets: offsets)
+    }
+    
+    func moveROOM (from source:IndexSet,to destination:Int) {
+        store.rooms.move( fromOffsets: source, toOffset: destination )
     }
 }
 struct ContentView_Previews: PreviewProvider {
