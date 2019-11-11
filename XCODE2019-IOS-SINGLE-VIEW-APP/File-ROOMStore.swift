@@ -11,7 +11,7 @@ import Combine
 
 class ROOMStore: ObservableObject {
     
-    var rooms: [Room]{
+    @Published var rooms: [Room]{
             didSet { didChange.send()}
     }
     
@@ -20,7 +20,7 @@ class ROOMStore: ObservableObject {
         self.rooms = rooms
     }
     
-    var didChange = PassthroughSubject<Void, Never>()
+    @Published var didChange = PassthroughSubject<Void, Never>()
     
 }
   

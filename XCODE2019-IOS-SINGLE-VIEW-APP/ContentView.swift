@@ -29,7 +29,6 @@ struct ContentView: View {
         store.rooms.append(Room(name: "HallDeck", capacity: 2000, hasVideo: true))
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(store: ROOMStore(rooms: testData))
