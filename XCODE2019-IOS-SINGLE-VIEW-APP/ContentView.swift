@@ -14,8 +14,10 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(store.rooms) { room in
-                ExtractedViewROOMCELL(room: room)
+            List {
+                ForEach(store.rooms){room in
+                    ExtractedViewROOMCELL(room: room)
+                }
             }
             .navigationBarTitle(Text("Rooms"))
         }
