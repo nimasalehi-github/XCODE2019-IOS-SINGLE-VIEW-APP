@@ -8,13 +8,13 @@
 
 import SwiftUI
 
-
 struct ContentView: View {
     @ObservedObject var store = ROOMStore()
     
     var body: some View {
         NavigationView {
             List {
+                
                 Section{
                     Button(action: ADDRoom){
                         Text("AddDeck")
