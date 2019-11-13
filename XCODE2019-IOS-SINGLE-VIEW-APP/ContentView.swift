@@ -31,7 +31,7 @@ struct ContentView: View {
             }
         .navigationBarTitle(Text("Decks"))
         .navigationBarItems(trailing: EditButton())
-        .listStyle(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=List Style@*/DefaultListStyle()/*@END_MENU_TOKEN@*/)
+            .listStyle(GroupedListStyle())
         }
     }
     func ADDRoom()  {
